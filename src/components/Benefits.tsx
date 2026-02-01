@@ -3,13 +3,13 @@ import { Users, Video, Sparkles } from "lucide-react";
 
 export default function Benefits() {
   return (
-    <section className="section-pad bg-bg-light-pink/30">
+    <section className="bg-bg-light-pink/30 py-12 sm:py-16 md:py-20">
       <div className="container">
-        <div className="mb-10">
+        <div className="mb-8 sm:mb-10">
           <p className="label text-primary-pink">Clubhouse Community Benefits</p>
           <h2 className="mt-3">Everything You&apos;re Getting</h2>
         </div>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-5 sm:gap-6 lg:grid-cols-2">
           <div className="rounded-xl bg-white p-6 shadow-soft">
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-bg-light-pink">

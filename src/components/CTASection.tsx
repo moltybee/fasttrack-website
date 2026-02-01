@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 
 export default function CTASection() {
   return (
-    <section className="section-pad bg-bg-light-pink/40">
+    <section className="bg-bg-light-pink/40 py-12 sm:py-16 md:py-20">
       <div className="container">
-        <div className="rounded-[28px] bg-white px-6 py-10 text-center shadow-soft md:px-12">
+        <div className="rounded-[24px] bg-white px-5 py-10 text-center shadow-soft sm:rounded-[28px] sm:px-6 md:px-12">
           <p className="label text-primary-pink">Fast Track Clubhouse</p>
           <h2 className="mt-4">Get Access Today</h2>
           <p className="mt-3 text-2xl font-semibold text-text-dark">Only $47/month</p>

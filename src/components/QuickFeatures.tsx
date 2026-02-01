@@ -10,9 +10,9 @@ const tessFeatures = [
 
 export default function QuickFeatures() {
   return (
-    <section className="section-pad">
+    <section className="py-12 sm:py-16 md:py-20">
       <div className="container">
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-5 sm:gap-6 lg:grid-cols-2">
           <Card className="relative overflow-hidden border border-bg-light-pink/70 bg-bg-light-pink/40">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white">
@@ -22,8 +22,8 @@ export default function QuickFeatures() {
                 <h3 className="text-xl">Ask Your Questions</h3>
               </div>
             </CardHeader>
-            <CardContent className="flex items-end justify-between gap-4">
-              <p className="max-w-[280px] text-text-muted">
+            <CardContent className="flex flex-col items-center gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <p className="text-center text-text-muted sm:max-w-[280px] sm:text-left">
                 Post in the chat or jump onto a Live Q&amp;A Session to ask your questions. We&apos;re here to
                 help!
               </p>
@@ -32,7 +32,7 @@ export default function QuickFeatures() {
                 alt="Ask your questions"
                 width={180}
                 height={200}
-                className="h-auto w-[160px] object-contain"
+                className="h-auto w-[140px] object-contain sm:w-[160px]"
               />
             </CardContent>
           </Card>
