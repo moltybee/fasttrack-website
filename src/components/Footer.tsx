@@ -30,8 +30,10 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <Image src="/images/9OZRbcL5mulT0bX1YSrCFJMI8KY.png" alt="Logo" width={48} height={48} />
             <div>
-              <p className="text-lg font-semibold">The Fast Track Girl</p>
-              <p className="text-sm text-text-light">COPYRIGHT © 2024 | THE FAST TRACK GIRL</p>
+              <p className="font-heading text-2xl font-semibold italic tracking-tight text-primary-pink">
+                Fast Track
+              </p>
+              <p className="text-xs text-text-light">COPYRIGHT © 2024 | THE FAST TRACK GIRL</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-4 text-sm text-text-muted">

@@ -18,8 +18,10 @@ export default function Hero() {
       <div className="container section-pad relative z-10">
         <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-6">
-            <p className="label text-primary-pink">Fast Track TikTok Shop Support Community</p>
-            <h1>The Fast Track Clubhouse</h1>
+            <span className="inline-block rounded-full bg-primary-pink/10 px-4 py-2 text-sm font-semibold text-primary-pink">
+              FAST TRACK CLUBHOUSE
+            </span>
+            <h1>Fast Track TikTok Shop Support Community</h1>
             <p className="text-lg text-text-muted">
               The Exclusive Community for Added Support, Live Q&amp;A, Video Feedback, Connect with other
               Members, Giveaways, and more!
@@ -38,12 +40,14 @@ export default function Hero() {
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm text-text-light">
-              <div className="flex -space-x-3">
+              <div className="flex items-center -space-x-3">
                 {[
                   "/images/8FI9RWuxm9P2aWDZxOtm4wPrcgs.webp",
                   "/images/GRMJgwFhOvGvM9iz1KuqoVaCf2U.webp",
                   "/images/QseKgsg1tPATVDovqWFWRhUORIk.webp",
-                ].map((src) => (
+                  "/images/WecZWbWgySXN0TDWgQiGkYEgHc.webp",
+                  "/images/qDh3Kbavr3LcfTIXU1pRdgeI.webp",
+                ].map((src, i) => (
                   <Image
                     key={src}
                     src={src}
@@ -51,10 +55,14 @@ export default function Hero() {
                     width={44}
                     height={44}
                     className="h-11 w-11 rounded-full border-2 border-white object-cover"
+                    style={{ zIndex: 10 - i }}
                   />
                 ))}
+                <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-white bg-primary-pink text-xs font-bold text-white">
+                  +500
+                </span>
               </div>
-              <span>Join hundreds of TikTok Shop affiliates learning together.</span>
+              <span>Join hundreds of Fast Trackers learning together.</span>
             </div>
           </div>
           <div className="relative">

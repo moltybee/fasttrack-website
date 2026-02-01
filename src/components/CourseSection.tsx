@@ -2,8 +2,10 @@ import Image from "next/image";
 
 export default function CourseSection() {
   return (
-    <section className="section-pad">
-      <div className="container">
+    <section className="section-pad relative overflow-hidden">
+      {/* Decorative pink blob */}
+      <div className="absolute -right-32 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-primary-pink/10 blur-3xl" />
+      <div className="container relative z-10">
         <div className="mb-10">
           <p className="label text-primary-pink">The TikTok Shop Accelerator</p>
           <h2 className="mt-3">Fast Track Course</h2>
