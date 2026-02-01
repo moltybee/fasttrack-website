@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-pink: #ff4579;
+  --primary-pink-hover: #e63d6d;
+  --text-dark: #212a40;
+  --text-muted: #485e79;
+  --text-light: #828e9d;
+  --bg-white: #ffffff;
+  --bg-light-pink: #ffeff2;
+  --bg-light-green: #e6ffd6;
+  --bg-light-yellow: #fffad4;
+  --bg-light-purple: #ffedfb;
+  --bg-light-orange: #fff9f3;
+  --faq-text: #ff8e8e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: var(--text-dark);
+  background: var(--bg-white);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  letter-spacing: -2px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: clamp(2.4rem, 3.5vw, 3.625rem);
+}
+
+h2 {
+  font-size: clamp(2.1rem, 3vw, 2.875rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+}
+
+.label {
+  font-family: var(--font-poppins), ui-sans-serif, system-ui;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.section-pad {
+  padding: 4.5rem 0;
+}
+
+@media (max-width: 809px) {
+  .section-pad {
+    padding: 3.5rem 0;
+  }
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at 20% 10%, #ffe7ef 0%, transparent 45%),
+    radial-gradient(circle at 90% 10%, #e6ffd6 0%, transparent 40%),
+    linear-gradient(180deg, #fff8fb 0%, #ffffff 60%);
+}
+
+.gradient-footer {
+  background: radial-gradient(circle at 10% 20%, rgba(255, 69, 121, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 90% 70%, rgba(83, 219, 199, 0.2) 0%, transparent 40%);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
