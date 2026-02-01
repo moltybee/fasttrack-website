@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="grid items-center gap-8 md:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-5 md:space-y-6">
             <span className="inline-block rounded-full bg-primary-pink/10 px-4 py-2 text-sm font-semibold text-primary-pink">
-              FAST TRACK CLUBHOUSE
+              Fast Track Clubhouse
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl">Fast Track TikTok Shop Support Community</h1>
             <p className="text-lg text-text-muted">
@@ -35,7 +35,7 @@ export default function Hero() {
                 rel="noreferrer"
                 className={cn(buttonVariants({ size: "xl" }), "w-full justify-center sm:w-auto")}
               >
-                Join the Clubhouse
+                Yes! I want this!
               </a>
               <div className="flex items-center justify-center gap-2 rounded-full border border-primary-pink/20 bg-white px-4 py-2.5 text-sm shadow-sm sm:justify-start sm:px-5 sm:py-3">
                 <span className="text-lg text-primary-pink">♥</span>
@@ -43,49 +43,51 @@ export default function Hero() {
                 <span className="text-text-light">• Cancel anytime</span>
               </div>
             </div>
-            <div className="flex items-center gap-4 text-sm text-text-light">
-              <div className="flex items-center -space-x-3">
-                {[
-                  "/images/8FI9RWuxm9P2aWDZxOtm4wPrcgs.webp",
-                  "/images/GRMJgwFhOvGvM9iz1KuqoVaCf2U.webp",
-                  "/images/QseKgsg1tPATVDovqWFWRhUORIk.webp",
-                  "/images/WecZWbWgySXN0TDWgQiGkYEgHc.webp",
-                  "/images/qDh3Kbavr3LcfTIXU1pRdgeI.webp",
-                ].map((src, i) => (
-                  <Image
-                    key={src}
-                    src={src}
-                    alt="Member"
-                    width={44}
-                    height={44}
-                    className="h-11 w-11 rounded-full border-2 border-white object-cover"
-                    style={{ zIndex: 10 - i }}
-                  />
-                ))}
-                <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-white bg-primary-pink text-xs font-bold text-white">
-                  +500
-                </span>
-              </div>
-              <span>Join hundreds of Fast Trackers learning together.</span>
-            </div>
+            <p className="text-sm text-text-light">
+              Join hundreds of Fast Trackers learning together.
+            </p>
           </div>
-          <div className="relative mx-auto max-w-md lg:max-w-none">
-            <div className="relative overflow-hidden rounded-[24px] border border-white/70 bg-white/90 p-2.5 shadow-lg ring-1 ring-black/5 sm:rounded-[28px] sm:p-4">
-              <Image
-                src="/images/2UJUEzBjCrdTaP2IAu9ZjK1b0.png"
-                alt="Fast Track Clubhouse preview"
-                width={900}
-                height={700}
-                className="h-auto w-full rounded-[18px] object-cover sm:rounded-[22px]"
-                priority
-              />
+          <div className="relative mx-auto max-w-xs sm:max-w-sm lg:max-w-md">
+            {/* Phone mockup with Kierra */}
+            <div className="relative mx-auto w-[245px] sm:w-[300px]">
+              <div className="overflow-hidden rounded-[32px] bg-gradient-to-b from-primary-pink/20 to-primary-pink/5 p-2 shadow-2xl ring-1 ring-black/5">
+                <Image
+                  src="/images/o23sovzwbGquNQR4sN1PTZjnI.png"
+                  alt="Kierra - The Fast Track Girl"
+                  width={245}
+                  height={500}
+                  className="h-auto w-full rounded-[24px] object-cover"
+                  priority
+                />
+              </div>
+              {/* 700+ Members badge */}
+              <div className="absolute -right-4 top-8 flex items-center gap-2 rounded-full bg-primary-pink px-4 py-2 text-sm font-bold text-white shadow-lg sm:-right-8">
+                <div className="flex -space-x-2">
+                  {[
+                    "/images/8FI9RWuxm9P2aWDZxOtm4wPrcgs.webp",
+                    "/images/GRMJgwFhOvGvM9iz1KuqoVaCf2U.webp",
+                    "/images/QseKgsg1tPATVDovqWFWRhUORIk.webp",
+                  ].map((src, i) => (
+                    <Image
+                      key={src}
+                      src={src}
+                      alt="Member"
+                      width={24}
+                      height={24}
+                      className="h-6 w-6 rounded-full border-2 border-white object-cover"
+                      style={{ zIndex: 10 - i }}
+                    />
+                  ))}
+                </div>
+                <span>700+ Members</span>
+              </div>
             </div>
             <Image
               src="/images/2QIR6ok2HfrIWO7WzEKgCbySfyc.svg"
               alt="Decorative dots"
               width={140}
               height={140}
-              className="absolute -left-10 bottom-10 hidden md:block"
+              className="absolute -left-16 bottom-20 hidden md:block"
             />
           </div>
         </div>

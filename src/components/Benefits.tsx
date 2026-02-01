@@ -57,7 +57,7 @@ export default function Benefits() {
           </div>
         </div>
         <div className="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="overflow-hidden rounded-xl bg-white p-6 shadow-soft">
+          <div className="rounded-xl bg-white p-6 shadow-soft">
             <div className="flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-bg-light-yellow">
                 <Sparkles className="text-primary-pink" />
@@ -67,23 +67,34 @@ export default function Benefits() {
                 <p className="text-sm text-text-light">Your TikTok Shop AI Script Generator</p>
               </div>
             </div>
-            <div className="mt-5 space-y-4">
-              <div className="-mx-6 overflow-hidden px-6">
-                <div className="flex w-max animate-ticker-fast gap-4">
-                  {[...Array(3)].map((_, idx) => (
-                    <div key={idx} className="flex gap-4">
-                      <div className="whitespace-nowrap rounded-full bg-bg-light-green/60 px-4 py-2 text-sm font-medium text-text-dark">🛡️ Policy Checker</div>
-                      <div className="whitespace-nowrap rounded-full bg-bg-light-pink/60 px-4 py-2 text-sm font-medium text-text-dark">🎉 Script Generator</div>
-                      <div className="whitespace-nowrap rounded-full bg-bg-light-purple/60 px-4 py-2 text-sm font-medium text-text-dark">🔥 Hook Maker</div>
-                      <div className="whitespace-nowrap rounded-full bg-bg-light-yellow/60 px-4 py-2 text-sm font-medium text-text-dark">⭐️ SEO Caption Optimizer</div>
-                    </div>
-                  ))}
+            <div className="mt-5 grid gap-4 md:grid-cols-2">
+              <div className="space-y-3">
+                <div className="overflow-hidden">
+                  <div className="flex w-max animate-ticker-fast gap-3">
+                    {[...Array(3)].map((_, idx) => (
+                      <div key={idx} className="flex gap-3">
+                        <span className="whitespace-nowrap rounded-full bg-bg-light-green/60 px-3 py-1.5 text-sm">🛡️ Policy Checker</span>
+                        <span className="whitespace-nowrap rounded-full bg-bg-light-pink/60 px-3 py-1.5 text-sm">🎉 Script Generator</span>
+                        <span className="whitespace-nowrap rounded-full bg-bg-light-purple/60 px-3 py-1.5 text-sm">🔥 Hook Maker</span>
+                        <span className="whitespace-nowrap rounded-full bg-bg-light-yellow/60 px-3 py-1.5 text-sm">⭐️ SEO Caption Optimizer</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
+                <p className="text-sm text-text-muted">
+                  TESS is specifically trained to make your life easier crafting beautiful Shop Scripts,
+                  Hooks, &amp; Captions, in a matter of seconds.
+                </p>
               </div>
-              <p className="text-sm text-text-muted">
-                TESS is specifically trained to make your life easier crafting beautiful Shop Scripts,
-                Hooks, &amp; Captions, in a matter of seconds.
-              </p>
+              <div>
+                <Image
+                  src="/images/2vh15sTQUMX2wgNh7Nvrg4D2GSo.png"
+                  alt="TESS Interface"
+                  width={635}
+                  height={358}
+                  className="w-full rounded-xl border border-gray-100 object-cover shadow-sm"
+                />
+              </div>
             </div>
           </div>
           <div className="rounded-xl bg-white p-6 shadow-soft">
