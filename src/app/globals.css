@@ -92,3 +92,34 @@ h3 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Ticker/Marquee animations */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  animation: ticker 30s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-fast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker-fast {
+  animation: ticker-fast 15s linear infinite;
+}

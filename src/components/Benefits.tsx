@@ -67,26 +67,23 @@ export default function Benefits() {
                 <p className="text-sm text-text-light">Your TikTok Shop AI Script Generator</p>
               </div>
             </div>
-            <div className="mt-5 grid gap-4 md:grid-cols-2">
-              <div className="space-y-3 text-sm text-text-muted">
-                <div className="rounded-full bg-bg-light-green/60 px-4 py-2">🛡️ Policy Checker</div>
-                <div className="rounded-full bg-bg-light-pink/60 px-4 py-2">🎉 Script Generator</div>
-                <div className="rounded-full bg-bg-light-purple/60 px-4 py-2">🔥 Hook Maker</div>
-                <div className="rounded-full bg-bg-light-yellow/60 px-4 py-2">⭐️ SEO Caption Optimizer</div>
+            <div className="mt-5 space-y-4">
+              <div className="overflow-hidden">
+                <div className="flex w-max animate-ticker-fast gap-4">
+                  {[...Array(2)].map((_, idx) => (
+                    <div key={idx} className="flex gap-4">
+                      <div className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm font-medium text-text-dark shadow-sm">🛡️ Policy Checker</div>
+                      <div className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm font-medium text-text-dark shadow-sm">🎉 Script Generator</div>
+                      <div className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm font-medium text-text-dark shadow-sm">🔥 Hook Maker</div>
+                      <div className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm font-medium text-text-dark shadow-sm">⭐️ SEO Caption Optimizer</div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="text-sm text-text-muted">
-                <p>
-                  TESS is specifically trained to make your life easier crafting beautiful Shop Scripts,
-                  Hooks, &amp; Captions, in a matter of seconds.
-                </p>
-                <Image
-                  src="/images/2vh15sTQUMX2wgNh7Nvrg4D2GSo.png"
-                  alt="TESS preview"
-                  width={420}
-                  height={240}
-                  className="mt-4 w-full rounded-xl border border-gray-100 object-cover"
-                />
-              </div>
+              <p className="text-sm text-text-muted">
+                TESS is specifically trained to make your life easier crafting beautiful Shop Scripts,
+                Hooks, &amp; Captions, in a matter of seconds.
+              </p>
             </div>
           </div>
           <div className="rounded-xl bg-white p-6 shadow-soft">

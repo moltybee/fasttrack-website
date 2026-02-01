@@ -62,15 +62,15 @@ export default function ExpertSessions() {
         </div>
       </div>
       <div className="mt-6 overflow-hidden">
-        <div className="flex gap-5 overflow-x-auto px-6 pb-4 scrollbar-hide md:px-12">
-          {sessions.map((session) => (
+        <div className="flex w-max animate-ticker gap-[50px] px-6 pb-4 md:px-12">
+          {[...sessions, ...sessions].map((session, i) => (
             <div
-              key={session.title}
-              className={`min-w-[260px] snap-start rounded-xl ${session.bg} p-4 shadow-soft md:min-w-[300px]`}
+              key={`${session.title}-${i}`}
+              className={`w-[350px] flex-shrink-0 rounded-2xl ${session.bg} p-5 shadow-soft`}
             >
-              <div className="overflow-hidden rounded-lg">
+              <div className="overflow-hidden rounded-[20px]">
                 <video
-                  className="h-44 w-full object-cover"
+                  className="h-52 w-full scale-90 object-cover"
                   src={session.video}
                   muted
                   loop
@@ -78,9 +78,9 @@ export default function ExpertSessions() {
                   playsInline
                 />
               </div>
-              <div className="mt-4">
-                <p className="text-sm text-text-light">{session.handle}</p>
-                <h3 className="mt-1 text-lg">{session.title}</h3>
+              <div className="mt-4 text-center">
+                <h3 className="text-lg text-primary-pink">{session.title}</h3>
+                <p className="mt-1 text-sm text-text-muted">{session.handle}</p>
               </div>
             </div>
           ))}
