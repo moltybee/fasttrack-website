@@ -6,8 +6,7 @@ import { cn } from "@/lib/utils";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden gradient-hero">
-      <div className="absolute -left-20 top-24 h-56 w-56 rounded-full bg-bg-light-pink/70 blur-3xl" />
-      <div className="absolute right-0 top-10 h-64 w-64 rounded-full bg-bg-light-green/70 blur-3xl" />
+      <div className="absolute -left-20 top-24 h-56 w-56 rounded-full bg-bg-light-pink/50 blur-3xl" />
       {/* Decorative hearts */}
       <div className="absolute right-[15%] top-20 text-2xl text-primary-pink/30 sm:text-3xl">♥</div>
       <div className="absolute left-[10%] top-[60%] hidden text-xl text-primary-pink/20 sm:block">♥</div>
@@ -71,8 +70,6 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative mx-auto max-w-md lg:max-w-none">
-            <div className="absolute -right-6 -top-10 h-32 w-32 rounded-full bg-bg-light-yellow/80 blur-2xl" />
-            <div className="absolute -bottom-10 left-6 h-28 w-28 rounded-full bg-bg-light-purple/80 blur-2xl" />
             <div className="relative overflow-hidden rounded-[24px] border border-white/70 bg-white/90 p-2.5 shadow-lg ring-1 ring-black/5 sm:rounded-[28px] sm:p-4">
               <Image
                 src="/images/2UJUEzBjCrdTaP2IAu9ZjK1b0.png"

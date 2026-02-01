@@ -36,13 +36,13 @@ export default function QuickFeatures() {
               />
             </CardContent>
           </Card>
-          <Card className="border border-bg-light-green/70 bg-bg-light-green/40">
+          <Card className="border border-primary-pink/20 bg-primary-pink text-white">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white">
                 <Image src="/images/8ZOAB533efG1UaA3mjBoDMZJQ.svg" alt="TESS" width={28} height={28} />
               </div>
               <div>
-                <h3 className="text-xl">TESS Included</h3>
+                <h3 className="text-xl text-white">TESS Included</h3>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -56,7 +56,7 @@ export default function QuickFeatures() {
                   </span>
                 ))}
               </div>
-              <p className="text-text-muted">AI Powered and specially trained for TikTok Shop Affiliates!</p>
+              <p className="text-white/90">AI Powered and specially trained for TikTok Shop Affiliates!</p>
             </CardContent>
           </Card>
         </div>

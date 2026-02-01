@@ -64,7 +64,7 @@ export default function Testimonials() {
             <div className="flex">
               {testimonials.map((item) => (
                 <div key={item.name} className="min-w-0 flex-[0_0_90%] px-3 md:flex-[0_0_45%] lg:flex-[0_0_33%]">
-                  <div className="flex h-full flex-col gap-4 rounded-xl border border-gray-100 bg-white p-6 shadow-soft">
+                  <div className="flex h-full flex-col gap-4 rounded-xl border border-bg-light-yellow/50 bg-bg-light-yellow/40 p-6 shadow-soft">
                     <p className="text-text-muted">“{item.quote}”</p>
                     <div className="mt-auto flex items-center gap-3">
                       <Image

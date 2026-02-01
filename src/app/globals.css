@@ -76,9 +76,7 @@ h3 {
 }
 
 .gradient-hero {
-  background: radial-gradient(circle at 20% 10%, #ffe7ef 0%, transparent 45%),
-    radial-gradient(circle at 90% 10%, #e6ffd6 0%, transparent 40%),
-    linear-gradient(180deg, #fff8fb 0%, #ffffff 60%);
+  background: linear-gradient(180deg, #ffeff2 0%, #fff8fb 40%, #ffffff 100%);
 }
 
 .gradient-footer {
