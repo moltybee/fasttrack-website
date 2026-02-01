@@ -8,6 +8,9 @@ export default function Hero() {
     <section className="relative overflow-hidden gradient-hero">
       <div className="absolute -left-20 top-24 h-56 w-56 rounded-full bg-bg-light-pink/70 blur-3xl" />
       <div className="absolute right-0 top-10 h-64 w-64 rounded-full bg-bg-light-green/70 blur-3xl" />
+      {/* Decorative hearts */}
+      <div className="absolute right-[15%] top-20 text-2xl text-primary-pink/30 sm:text-3xl">♥</div>
+      <div className="absolute left-[10%] top-[60%] hidden text-xl text-primary-pink/20 sm:block">♥</div>
       <Image
         src="/images/084LmX7KUwbPvlnhTodNlUqFs.svg"
         alt="Decorative swirl"
@@ -35,8 +38,10 @@ export default function Hero() {
               >
                 Join the Clubhouse
               </a>
-              <div className="flex items-center justify-center gap-3 rounded-full bg-white px-5 py-3 text-sm text-text-muted shadow-soft sm:justify-start">
-                <span className="text-primary-pink">★</span> Only $47/month • Cancel anytime
+              <div className="flex items-center justify-center gap-2 rounded-full border border-primary-pink/20 bg-white px-4 py-2.5 text-sm shadow-sm sm:justify-start sm:px-5 sm:py-3">
+                <span className="text-lg text-primary-pink">♥</span>
+                <span className="font-medium text-text-dark">Only $47/month</span>
+                <span className="text-text-light">• Cancel anytime</span>
               </div>
             </div>
             <div className="flex items-center gap-4 text-sm text-text-light">
@@ -68,13 +73,13 @@ export default function Hero() {
           <div className="relative mx-auto max-w-md lg:max-w-none">
             <div className="absolute -right-6 -top-10 h-32 w-32 rounded-full bg-bg-light-yellow/80 blur-2xl" />
             <div className="absolute -bottom-10 left-6 h-28 w-28 rounded-full bg-bg-light-purple/80 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[28px] border border-white/60 bg-white/80 p-3 shadow-soft sm:p-4">
+            <div className="relative overflow-hidden rounded-[24px] border border-white/70 bg-white/90 p-2.5 shadow-lg ring-1 ring-black/5 sm:rounded-[28px] sm:p-4">
               <Image
                 src="/images/2UJUEzBjCrdTaP2IAu9ZjK1b0.png"
                 alt="Fast Track Clubhouse preview"
                 width={900}
                 height={700}
-                className="h-auto w-full rounded-[20px] object-cover sm:rounded-[22px]"
+                className="h-auto w-full rounded-[18px] object-cover sm:rounded-[22px]"
                 priority
               />
             </div>

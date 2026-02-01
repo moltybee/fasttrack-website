@@ -25,9 +25,9 @@ export default function Footer() {
         height={120}
         className="absolute right-10 top-12 hidden md:block"
       />
-      <div className="container py-12">
-        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-3">
+      <div className="container py-10 sm:py-12">
+        <div className="flex flex-col gap-6 text-center sm:gap-8 md:flex-row md:items-center md:justify-between md:text-left">
+          <div className="flex flex-col items-center gap-3 sm:flex-row">
             <Image src="/images/9OZRbcL5mulT0bX1YSrCFJMI8KY.png" alt="Logo" width={48} height={48} />
             <div>
               <p className="font-heading text-2xl font-semibold italic tracking-tight text-primary-pink">
@@ -36,7 +36,7 @@ export default function Footer() {
               <p className="text-xs text-text-light">COPYRIGHT © 2024 | THE FAST TRACK GIRL</p>
             </div>
           </div>
-          <div className="flex flex-wrap gap-4 text-sm text-text-muted">
+          <div className="flex flex-wrap justify-center gap-3 text-sm text-text-muted sm:gap-4 md:justify-end">
             {links.map((link) => (
               <a key={link.label} href={link.href} target="_blank" rel="noreferrer" className="hover:text-primary-pink">
                 {link.label}

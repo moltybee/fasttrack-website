@@ -35,9 +35,9 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section className="section-pad">
+    <section className="py-12 sm:py-16 md:py-20">
       <div className="container">
-        <div className="mb-8">
+        <div className="mb-6 sm:mb-8">
           <h2 className="text-faq-text">Frequently Asked Questions</h2>
         </div>
         <Accordion type="single" collapsible className="rounded-xl border border-gray-100 bg-white p-4 shadow-soft">

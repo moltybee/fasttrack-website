@@ -53,9 +53,9 @@ const sessions = [
 
 export default function ExpertSessions() {
   return (
-    <section className="section-pad bg-white">
+    <section className="bg-white py-12 sm:py-16 md:py-20">
       <div className="container">
-        <div className="mb-8 flex flex-col gap-2">
+        <div className="mb-6 flex flex-col gap-2 sm:mb-8">
           <p className="label text-primary-pink">Win With Strategy, Not Guesswork</p>
           <h2>Expert Insights, Unfiltered</h2>
           <p className="text-text-muted">Exclusive sessions from TikTok Shop experts and top affiliates.</p>

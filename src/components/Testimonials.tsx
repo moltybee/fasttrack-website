@@ -53,9 +53,9 @@ export default function Testimonials() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="section-pad bg-white">
+    <section className="bg-white py-12 sm:py-16 md:py-20">
       <div className="container">
-        <div className="mb-10 text-center">
+        <div className="mb-8 text-center sm:mb-10">
           <p className="label text-primary-pink">From Our Members</p>
           <h2 className="mt-3">What Fast Trackers Are Saying</h2>
         </div>
