@@ -6,6 +6,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import QuickFeatures from "@/components/QuickFeatures";
+import SeeWhatsWorking from "@/components/SeeWhatsWorking";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <QuickFeatures />
+      <SeeWhatsWorking />
       <Testimonials />
       <Benefits />
       <CourseSection />

@@ -56,9 +56,8 @@ export default function Testimonials() {
     <section className="section-pad bg-white">
       <div className="container">
         <div className="mb-10 text-center">
-          <p className="label text-primary-pink">Comfort In Community</p>
-          <h2 className="mt-3">See What&apos;s Working</h2>
-          <p className="mt-2 text-text-muted">Learn from others and build your success!</p>
+          <p className="label text-primary-pink">From Our Members</p>
+          <h2 className="mt-3">What Fast Trackers Are Saying</h2>
         </div>
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
