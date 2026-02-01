@@ -57,7 +57,7 @@ export default function Benefits() {
           </div>
         </div>
         <div className="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="rounded-xl bg-white p-6 shadow-soft">
+          <div className="overflow-hidden rounded-xl bg-white p-6 shadow-soft">
             <div className="flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-bg-light-yellow">
                 <Sparkles className="text-primary-pink" />
@@ -68,14 +68,14 @@ export default function Benefits() {
               </div>
             </div>
             <div className="mt-5 space-y-4">
-              <div className="overflow-hidden">
+              <div className="-mx-6 overflow-hidden px-6">
                 <div className="flex w-max animate-ticker-fast gap-4">
-                  {[...Array(2)].map((_, idx) => (
+                  {[...Array(3)].map((_, idx) => (
                     <div key={idx} className="flex gap-4">
-                      <div className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm font-medium text-text-dark shadow-sm">🛡️ Policy Checker</div>
-                      <div className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm font-medium text-text-dark shadow-sm">🎉 Script Generator</div>
-                      <div className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm font-medium text-text-dark shadow-sm">🔥 Hook Maker</div>
-                      <div className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm font-medium text-text-dark shadow-sm">⭐️ SEO Caption Optimizer</div>
+                      <div className="whitespace-nowrap rounded-full bg-bg-light-green/60 px-4 py-2 text-sm font-medium text-text-dark">🛡️ Policy Checker</div>
+                      <div className="whitespace-nowrap rounded-full bg-bg-light-pink/60 px-4 py-2 text-sm font-medium text-text-dark">🎉 Script Generator</div>
+                      <div className="whitespace-nowrap rounded-full bg-bg-light-purple/60 px-4 py-2 text-sm font-medium text-text-dark">🔥 Hook Maker</div>
+                      <div className="whitespace-nowrap rounded-full bg-bg-light-yellow/60 px-4 py-2 text-sm font-medium text-text-dark">⭐️ SEO Caption Optimizer</div>
                     </div>
                   ))}
                 </div>

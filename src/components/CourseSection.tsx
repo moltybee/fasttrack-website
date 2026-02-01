@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function CourseSection() {
   return (
     <section className="relative overflow-hidden py-12 sm:py-16 md:py-20">
-      {/* Decorative pink blob */}
-      <div className="absolute -right-32 top-1/2 h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-primary-pink/10 blur-3xl sm:h-[400px] sm:w-[400px]" />
+      {/* Decorative pink blob - hidden on mobile */}
+      <div className="absolute -right-32 top-1/2 hidden h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-primary-pink/10 blur-3xl sm:block sm:h-[400px] sm:w-[400px]" />
       <div className="container relative z-10">
         <div className="mb-8 sm:mb-10">
           <p className="label text-primary-pink">The TikTok Shop Accelerator</p>
